@@ -1,0 +1,10 @@
+{
+  "id": 3,
+  "name": "Дмитрий Соколов",
+  "avatar": "https://randomuser.me/api/portraits/men/75.jpg",
+  "details": {
+    "city": "Казань",
+    "company": "Т-банк",
+    "position": "Backend-разработчик"
+  }
+}

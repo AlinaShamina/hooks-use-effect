@@ -1,0 +1,10 @@
+{
+  "id": 1,
+  "name": "Иван Петров",
+  "avatar": "https://randomuser.me/api/portraits/men/32.jpg",
+  "details": {
+    "city": "Москва",
+    "company": "Яндекс",
+    "position": "Frontend-разработчик"
+  }
+}
