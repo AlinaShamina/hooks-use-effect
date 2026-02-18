@@ -9,7 +9,7 @@ export default function List({ onSelect, selectedUser }) {
     setLoading(true);
     setError(null);
 
-    fetch("/data/users.json")
+    fetch(`${import.meta.env.BASE_URL}data/users.json`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Ошибка загрузки списка пользователей");
@@ -41,8 +41,6 @@ export default function List({ onSelect, selectedUser }) {
           key={user.id}
           className={selectedUser?.id === user.id ? "active" : ""}
           onClick={() => {
-            // чтобы повторный клик по тому же пользователю
-            // НЕ вызывал лишнего обновления
             if (selectedUser?.id !== user.id) {
               onSelect(user);
             }

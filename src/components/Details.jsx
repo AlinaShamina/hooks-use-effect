@@ -15,7 +15,7 @@ export default function Details({ info }) {
     setLoading(true);
     setError(null);
 
-    fetch(`/data/${info.id}.json`)
+    fetch(`${import.meta.env.BASE_URL}data/${info.id}.json`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Ошибка загрузки данных пользователя");
